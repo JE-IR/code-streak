@@ -1,0 +1,7 @@
+{
+  "name": "CodeStreak",
+  "description": "A developer coding habit and streak tracker featuring active practice sessions, accelerometer shake-to-log progress, Room persistence, goals, projections, level badges, and motivational quote integrations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

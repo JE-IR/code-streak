@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declares activities, hardware sensor capabilities (android.hardware.sensor.accelerometer),
+vibration permissions (android.permission.VIBRATE), and launcher configurations. -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+
+        <!-- Splash Activity (Launcher Entry Point) -->
+        <activity
+            android:name=".ui.activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Auth Activity -->
+        <activity
+            android:name=".ui.activities.AuthActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication" />
+
+        <!-- Dashboard Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication" />
+
+        <!-- Active Practice Session Activity (Shake Sensor) -->
+        <activity
+            android:name=".ui.activities.ActiveSessionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication" />
+
+        <!-- Session History & Logs Activity (CRUD) -->
+        <activity
+            android:name=".ui.activities.HistoryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication" />
+
+        <!-- Insights & Projections Activity -->
+        <activity
+            android:name=".ui.activities.InsightsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication" />
+
+        <!-- Profile & Settings Activity -->
+        <activity
+            android:name=".ui.activities.ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication" />
+
+        <!-- Admin Control Panel Activity -->
+        <activity
+            android:name=".ui.activities.AdminActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication" />
+
+
+    </application>
+
+</manifest>
